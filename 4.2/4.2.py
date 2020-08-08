@@ -12,7 +12,7 @@ app.config["JSON_AS_ASCII"] = False
 app.config['SECRET_KEY']='nowcoder'
 auth = HTTPTokenAuth()
 
-#测试，不影响测试结果
+#增加备注，不影响测试结果，二次备注修改
 
 def create_token(username,password):
     """创建token"""
