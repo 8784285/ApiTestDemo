@@ -54,7 +54,7 @@ def login():
 
     if rows:
         token = create_token(username,password)
-        return jsonify(code=4,msg="登录成功，欢迎您！",token=token.decode())
+        return jsonify(msg="登录成功，欢迎您！",token=token.decode())
     else:
         return jsonify(code=2,msg="非法用户")
     cursor.close()
